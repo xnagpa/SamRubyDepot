@@ -1,28 +1,18 @@
-== README
+This is a little webshop application made while I was reading Sam Ruby's book.
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Entities:
+  Orders
+  Products
+  Line_items
+  Cart
+  
+Functionality:
+  CHoose a product from the catalog
+  Add product to the cart
+  Create new order, choose the payment method
+  Send email with notification(only test version). 
+  Products are added to the cart via AJAX
+  Pagination for orders via will_paginate gem
+  Simple basic html authorization(removed)
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+  
