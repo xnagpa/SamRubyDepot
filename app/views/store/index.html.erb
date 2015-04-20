@@ -1,0 +1,18 @@
+<h2>Listing products</h2>
+
+ <div class="products">
+    <% @products.each do |product| %>
+       <div class="product">      
+           <h3><%= product.title %></h3>
+           <img src=  <%=  product.image_url%> />
+           <p><%= product.description %></p>          
+         <p><%= number_to_currency(product.price) %></p>
+           <ul class="product_links">
+           <li><%= link_to 'Show', product %></li>   
+             <li><%= button_to 'Add to cart',line_items_path(product_id: product), remote:true%></li>
+         </ul>
+      </div>  
+    <% end %>
+  </div>
+
+

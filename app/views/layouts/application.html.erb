@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Depot</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <p id="notice"><%= notice %></p>
+<div class="header">
+  <h1>Amazing depot shop</h1>
+  <ul class="main_menu">
+    <li><a href=#>Catalog</a></li>
+    <li><a href=#>About</a></li>
+    <li><a href=#>Contact us</a></li>
+  </ul>
+ 
+  <ul class="right_menu">
+    <li><a href=#>Sign in</a></li>
+    <li><a href=#>Login</a></li>   
+  </ul>
+  
+  
+</div> 
+ <div style="clear:both"></div> 
+<div class="main_content">
+  <%= yield %>
+</div> 
+ <div style="clear:both"></div> 
+<div class="footer">
+  <p>All rights reserved</p>
+  <% unless @cart.nil?%>
+  <div id="cart">
+      <%=render @cart%>
+  <div>
+    <%end%>
+</div> 
+ 
+
+</body>
+</html>

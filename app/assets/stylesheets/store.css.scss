@@ -1,0 +1,21 @@
+// Place all the styles related to the Store controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.products{
+   background-color: orange;
+  overflow:auto;
+  
+}
+
+.product{
+  float:left;
+  width:200px;
+   
+}
+
+.product img{
+  height:200px;
+  width:200px;
+  overflow:hidden;
+}
+
